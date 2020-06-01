@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+    <!-- Стили для JQuery modal window -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    
+    <!-- Стили -->
+    <link rel="stylesheet" href="./scss/style.css">
+
+    <script src='https://www.google.com/recaptcha/api.js?render=6LeNifQUAAAAAORq9i4VjHyjFxwMvtqsa68XUHeQ'></script>
+</head>
+
+<body>
+    
+    <div class="popup_box">
+        <div class="title">
+            <div class="container">
+                <div class="title_box">
+                    <div class="title_text">
+                        <h1>GET A TRIP</h1>
+                        <p>Enter your details, and <br> our specialist will contact you shortly</p>
+                    </div>
+                    <img class="close_btn" src="./img/cross.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main_info">
+            <div class="container map">
+                <form class="form">
+                    <div class="form_column">
+                        <div class="info_part">
+                            <h2>Your Contacts</h2>
+                            <div class="input_box full padt">
+                                <input type="text" class="input" required>
+                                <span class="custom_label">Your name</span>
+                            </div>
+                            <div class="input_box full">
+                                <input type="text" class="input" required>
+                                <span class="custom_label">Your phone</span>
+                            </div>
+                            <div class="input_box full">
+                                <input type="text" class="input" required>
+                                <span class="custom_label">Your e-mail</span>
+                            </div>
+                        </div>
+                        <div class="info_part time">
+                            <h2>Choose attributes</h2>
+                            <div class="input_box">
+                                <input type="text" class="input" required>
+                                <span class="custom_label">Date</span>
+                            </div>
+                            <div class="input_box">
+                                <input type="text" class="input" required>
+                                <span class="custom_label">Time</span>
+                            </div>
+                            <div class="input_box">
+                                <input type="text" class="input" required>
+                                <span class="custom_label">Duration</span>
+                            </div>
+                        </div>
+                        <div class="info_part">
+                            <h2>Choose your price</h2>
+                            <input type="number" class="input money" placeholder="$0.00" required>
+                        </div>
+                    </div>
+                    <div class="form_column main">
+                        <div class="info_part">
+                            <h2>Select a showplace <small>or indicate any place on the map you want to trip</small></h2>
+                            <p class="hidden_small">or indicate any place on the map you want to trip</p>
+                            <select class="select">
+                                <option value="1">Red Square</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <span class="select_result">Red Square</span>
+                        </div>
+                        <div class="map_showplace">
+                            <iframe id="main_map"
+                                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d17961.335321797374!2d37.61904830688478!3d55.75560259811316!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562263854656!5m2!1sru!2sru"
+                                width="100%" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <span class="address">Leningradsky avenue, 47s2</span>
+                        </div>
+                    </div>
+                    <div class="form_column btn">
+                        <button class="main_btn" type="submit">SEND REQUEST</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <img src="./img/logo.svg" alt="">
+                <button class="main_btn" data-scroll="#footer">ASK A QUESTION</button>
+            </nav>
+            <div class="header_inner">
+                <h2>VIRTUAL TRAVELING</h2>
+                <h1>AROUND THE WORLD</h1>
+                <p>WITHOUT LEAVING YOUR HOME</p>
+                <div class="buttons_box">
+                    <button class="main_btn" data-scroll="#showplaces">CHOOSE A SHOWPLACE</button>
+                    <button class="main_btn transparent" data-scroll="#main">HOW IT WORKS?</button>
+                </div>
+                <button class="scroll_btn" data-scroll="#main">
+                    <img src="./img/scroll.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="section main" id="main">
+        <div class="container">
+            <h1>HOW IT WORKS?</h1>
+            <div class="how_it_works">
+                <div class="point_box">
+                    <div class="image_box">
+                        <img src="./img/point1.svg" alt="">
+                        <span class="point">1</span>
+                    </div>
+                    <p>Sign up on our website or mobile app as a traveler</p>
+                </div>
+                <div class="point_box">
+                    <div class="image_box">
+                        <img src="./img/point2.svg" alt="">
+                        <span class="point">2</span>
+                    </div>
+                    <p>Select a city and any place on the map you want 
+                        to trip and indicate the price you are ready to pay</p>
+                </div>
+                <div class="point_box">
+                    <div class="image_box">
+                        <img src="./img/point3.svg" alt="">
+                        <span class="point">3</span>
+                    </div>
+                    <p>A performer accept your request and will arrive to the 
+                        showplace to the indicated time. Then he will connect you to the 
+                        broadcast by Skype or Zoom to hold a travel for you</p>
+                </div>
+                <div class="point_box">
+                    <div class="image_box">
+                        <img src="./img/point4.svg" alt="">
+                        <span class="point">4</span>
+                    </div>
+                    <p>You can set the direction of movement of the performer, just tell him your wishes</p>
+                </div>
+            </div>
+            
+            <h1 id="showplaces">THE SHOWPLACES OF MOSCOW</h1>
+            <div class="showplaces">
+                <div class="card_box">
+                    <img src="./img/card1.png" alt="">
+                    <div class="card_bottom">
+                        <span>Red Square</span>
+                        <button class="main_btn">GET A TRIP</button>
+                    </div>
+                </div>
+                <div class="card_box">
+                    <img src="./img/card2.png" alt="">
+                    <div class="card_bottom">
+                        <span>The statue of Peter the Great</span>
+                        <button class="main_btn">GET A TRIP</button>
+                    </div>
+                </div>
+                <div class="card_box">
+                    <img src="./img/card3.png" alt="">
+                    <div class="card_bottom">
+                        <span>Kremlin</span>
+                        <button class="main_btn">GET A TRIP</button>
+                    </div>
+                </div>
+                <div class="card_box">
+                    <img src="./img/card4.png" alt="">
+                    <div class="card_bottom">
+                        <span>Theatre Square</span>
+                        <button class="main_btn">GET A TRIP</button>
+                    </div>
+                </div>
+                <div class="card_box">
+                    <img src="./img/card5.png" alt="">
+                    <div class="card_bottom">
+                        <span>Alexander Garden</span>
+                        <button class="main_btn">GET A TRIP</button>
+                    </div>
+                </div>
+                <div class="card_box">
+                    <img src="./img/card6.png" alt="">
+                    <div class="card_bottom">
+                        <span>Gorky Park</span>
+                        <button class="main_btn">GET A TRIP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container map">
+            <div class="map_box">
+                <h2>Did not find you were looking for? <br> Choose a place you need on the map</h2>
+                <div class="map_main">
+                    <iframe id="main_map"
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d17961.335321797374!2d37.61904830688478!3d55.75560259811316!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562263854656!5m2!1sru!2sru"
+                        width="100%" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="location_box">
+                        <span class="address">Leningradsky avenue, 47s2 Leningradsky avenue, 47s2Leningradsky avenue, 47s2</span>
+                        <button class="main_btn">GET A TRIP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="video_box">
+        <img src="./img/video_prev.png" alt="">
+        <div class="container">
+            <button class="main_btn" id="watch_btn"><span>WATCH THE VIDEO</span><img src="./img/play_btn.svg" alt=""></button>
+        </div>
+    </div>
+    <section class="section advantages">
+        <div class="container">
+            <div class="advantages_box">
+                <div class="adv_column full">
+                    <div class="card_box">
+                        <div class="title">
+                            <img src="./img/adv1.png" alt="">
+                            <h2>WHO NEEDS IT</h2>
+                        </div>
+                        <p>Freelancers from different countries 
+                            can get in our team and and accept 
+                            requests for excursions. So, anyone 
+                            can go anywhere in the world in a 
+                            realtime. </p>
+                        <br>
+                        <p>You can visit a city, a 
+                            hotel or any other places befour 
+                            you will go there in real. Unlike 
+                            photos or videos you can turn anywhere 
+                            or visit different public places online. 
+                            Schoolers and students can book a travel 
+                            on group to museums or another showplaces.</p>
+                    </div>
+                </div>
+                <div class="adv_column main">
+                    <div class="card_box">
+                        <div class="title">
+                            <img src="./img/adv2.png" alt="">
+                            <h2>WHAT OPPORTUNITIES</h2>
+                        </div>
+                        <p>It takes a chance to get a trip anywhere in 
+                            the world for those who can not afford real 
+                            travel. For example, you can visit online 
+                            North Pole or to be underwater if there 
+                            is internet connection. We can use VR if 
+                            technology is available.</p>
+                    </div>
+                    <div class="card_box">
+                        <div class="title">
+                            <img src="./img/adv3.png" alt="">
+                            <h2>WHAT IS THE BENEFIT</h2>
+                        </div>
+                        <p>On the one hand a traveler have a chance to 
+                            trip to any city by small amount. 
+                            On the other hand a performer can 
+                            earn some money just by walking with 
+                            a smartphone.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer_box">
+                <div class="footer_column">
+                    <div class="info_box">
+                        <h2>Contact Us</h2>
+                        <p>+7 999 123-45-67</p>
+                        <span class="mail">info@vr-travel.com</span>
+                    </div>
+                    <div class="info_box">
+                        <h2>Follow Us</h2>
+                        <div class="socials">
+                            <a href="#">
+                                <img src="./img/vk.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/fb.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/inst.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/yt.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_column main">
+                    <h2>Ask a question</h2>
+                    <form class="form" method="post" id="formemail">
+                        <div class="form_info">
+                            <div class="input_box">
+                                <input type="text" class="input" name="form_name" required>
+                                <span class="custom_label">Your name</span>
+                            </div>
+                            <div class="input_box">
+                                <input type="text" class="input" name="form_email" required>
+                                <span class="custom_label">Your e-mail</span>
+                            </div>
+                            <div class="input_box full">
+                                <textarea type="text" class="textarea" name="msg_text" required rows="1"></textarea>
+                                <span class="custom_label">Your question</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="main_btn">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights_box">
+            <p>Lyoha inc © All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Подключение JQuery -->
+    <script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+    <!-- Подключение JQuery masked input -->
+    <script type="text/javascript" src="libs/jquery-masked-input/jquery.maskedinput.min.js"></script>
+
+    <!-- Jquery modal window -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script src="./libs/select2/select2.min.js"></script>
+
+    <!-- Подключение JavaSCript -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

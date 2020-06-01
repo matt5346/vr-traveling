@@ -1,0 +1,229 @@
+@media(max-width: 1200px) {
+
+}
+
+@media(max-width: 986px) {
+
+    .section.main .how_it_works {
+        padding: 0 20px;
+        .point_box {
+            width: 45%;
+        }
+    } 
+    .section.main .showplaces .card_box {
+        width: 49%;
+    }
+
+    .section.advantages .advantages_box { 
+        flex-wrap: wrap;
+        & h2 {
+            font-size: 20px;
+        }
+        & .adv_column {
+            width: 100%;
+            &.main {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 20px;
+                .card_box:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    
+    .section.advantages .advantages_box { 
+        & .adv_column {
+            &.main {
+                margin-top: 10px;
+                .card_box:first-child {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    
+    .section.advantages .advantages_box .adv_column .card_box {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .header .header_inner {
+        & h2 {
+            font-size: 30px;
+        }
+        & h1 {
+            font-size: 42px;
+        }
+        & p {
+            font-size: 20px;
+            margin: 10px 0 40px 0;
+        }
+    }
+
+
+    .popup_box .main_info .form_column {
+        width: 100%;
+        &.main {
+            width: 100%;
+        }
+        .info_part h2 {
+            margin: 0;
+            small {
+                display: none;
+            }
+        }
+        .hidden_small {
+            display: block;
+        }
+    }
+
+
+
+}
+
+@media(max-width: 576px) {
+
+    .video_box .main_btn {
+        bottom: 30%;
+    }
+
+    #main_map {
+        border-radius: 0;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .container.map {
+        padding: 0;
+        .map_box {
+            & h2 {
+                padding-left: 10px;
+            }
+
+        }
+    }
+
+    .section.main {
+        padding: 40px 0 0 0;
+    }
+
+    .section.advantages {
+        padding: 40px 0;
+    }
+
+    .footer .footer_box {
+        flex-wrap: wrap;
+        .footer_column {
+            width: 100%;
+            &.main {
+                width: 100%;
+            }
+            .form .form_info .input {
+                width: 100%;
+            }
+        }
+    }
+
+    .header  {
+        & .main_btn.transparent {
+            margin-left: 15px;
+            margin-top: 10px;
+            background: rgba(255, 255, 255, 0.81);
+        }
+        & .header_inner {
+            & h2 {
+                font-size: 24px;
+            }
+            & h1 {
+                font-size: 34px;
+            }
+            & p {
+                font-size: 16px;
+                margin: 10px 0 30px 0;
+            }
+        }
+    }
+
+    
+
+    .section.main .how_it_works {
+        padding: 0;
+        margin-bottom: 0;
+        .point_box {
+            width: 100%;
+            padding: 0 10px;
+            & .image_box .point {
+                left: -10px;
+            }
+        }
+    } 
+    .section.main .showplaces .card_box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .section.main {
+        & h1 {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+        .map_box .map_main .location_box .address {
+            max-width: 180px;
+        }
+    }
+
+    .video_box {
+        & .main_btn {
+            right: 15px;
+            & img {
+                height: 50px;
+                object-fit: contain;
+            }
+        }
+        img {
+            height: 360px;
+        }
+
+    }
+
+    .section.main .how_it_works .point_box {
+        p {
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .image_box img {
+            width: 80px;
+            height: 80px;
+            margin-left: 10px;
+        }
+    } 
+
+
+    .popup_box .main_info .form_column .info_part {
+        padding: 0 10px;
+    }
+
+    .popup_box .main_info .form_column .map_showplace .address {
+        width: 280;
+        text-align: center;
+    }
+
+    .popup_box .main_info .form_column .info_part .input_box {
+        margin-top: 10px;
+    }
+
+    .popup_box .main_info .form_column .info_part .input_box.full {
+        margin-top: 0;
+    }
+
+    .footer .footer_box .footer_column .form .form_info .input_box {
+        width: 100%;
+    }
+
+}
